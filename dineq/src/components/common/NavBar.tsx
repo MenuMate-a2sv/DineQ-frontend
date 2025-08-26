@@ -9,11 +9,12 @@ import { Roles } from "@/Types/type";
 function NavBar({ role }: Roles) {
   const pathname = usePathname();
 
+
   // Function to determine link classes
   const linkClasses = (path: string) =>
     pathname === path
-      ? "px-4 text-primary underline underline-offset-4 font-medium"
-      : "px-4 text-gray-700 hover:text-primary";
+      ? "px-4 text-[var(--color-primary)] underline underline-offset-4 font-medium"
+      : "px-4 text-gray-700 hover:text-[var(--color-primary)]";
 
   return (
     <div className="border-b shadow-sm border-gray-300 px-6 py-2 flex justify-between w-full items-center">
