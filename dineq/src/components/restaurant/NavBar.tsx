@@ -9,6 +9,7 @@ import { Roles } from "@/Types/type";
 function NavBar({ role }: Roles) {
   const pathname = usePathname();
 
+
   // Function to determine link classes
   const linkClasses = (path: string) =>
     pathname === path
